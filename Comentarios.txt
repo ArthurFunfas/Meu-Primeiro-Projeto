@@ -1,0 +1,1 @@
+Tive dificuldade na utilização do comando "aval", em comandos que referenciavam o branch principal como "main" e em entender como resolver conflitos, mas com ajuda consegui realizar o merge manual. Aprendi bastante sobre branches, merges e tags.

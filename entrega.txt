@@ -1,0 +1,52 @@
+-Arthur Bueno Funfas Leão 253041007
+-https://github.com/ArthurFunfas/Meu-Primeiro-Projeto
+-entrega-aula02-253041007
+-
+-comandos utilizados:
+git --version
+git config --global user.name "ArthurFunfas"
+git config --global user.email "arthurfunfas@edu.unifil.br"
+git config --list
+git config --global credential.helper wincred
+ssh-keygen -t ed25519 -C "arthurfunfas@edu.unifil.br"
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+cat ~/.ssh/id_ed25519.pub
+git config --list
+git config user.name
+git config user.email
+ssh -T git@github.com
+mkdir meu-primeiro-projeto
+cd meu-primeiro-projeto
+git init
+echo "# Meu Primeiro Projeto Git" > README.md
+git add README.md
+git commit -m "Primeiro commit: adicionando README"
+git log
+git log --oneline
+git show [hash_do_commit]
+git checkout [hash_do_commit]
+git checkout master
+git remote add origin https://github.com/ArthurFunfas/Meu-Primeiro-Projeto
+git remote -v
+git push -u origin master
+git checkout -b feature-nova
+echo "## Nova funcionalidade incrível" >> README.md
+git add README.md
+git commit -m "Adicionando descrição da nova funcionalidade"
+git checkout master
+git merge feature-nova
+git checkout -b feature-A
+echo "Funcionalidade A" > funcionalidade.txt
+git add funcionalidade.txt
+git commit -m "Adicionando funcionalidade A"
+git checkout master
+git checkout -b feature-B
+echo "Funcionalidade B" > funcionalidade.txt
+git add funcionalidade.txt
+git commit -m "Adicionando funcionalidade B"
+git checkout master
+git merge feature-A
+git merge feature-B
+git add funcionalidade.txt
+git commit -m "Resolvendo conflito entre A e B"

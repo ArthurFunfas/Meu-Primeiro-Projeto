@@ -1,7 +1,7 @@
 -Arthur Bueno Funfas Leão 253041007
 -https://github.com/ArthurFunfas/Meu-Primeiro-Projeto
 -entrega-aula02-253041007
--
+-60b461de45daf2eb22cf0d9272c535807d5e1370
 -comandos utilizados:
 git --version
 git config --global user.name "ArthurFunfas"
